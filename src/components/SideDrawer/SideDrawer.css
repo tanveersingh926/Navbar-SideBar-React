@@ -8,5 +8,25 @@
     width: 70%;
     max-width: 400px;
     z-index: 200;
+}
 
+.side-drawer ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.side-drawer ul li {
+    margin: 0.5rem 0;
+}
+.side-drawer ul a {
+    color: #521751;
+    text-decoration: none;
+    font-size: 1.2rem
+}
+
+.side-drawer ul a:hover,
+.side-drawer ul a:active{
+    color: #fa923f;
 }
