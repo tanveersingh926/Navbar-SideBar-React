@@ -8,8 +8,14 @@
     width: 70%;
     max-width: 400px;
     z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out
+
 }
 
+.side-drawer.open {
+    transform: translateX(0)
+}
 .side-drawer ul {
     display: flex;
     list-style: none;
@@ -29,4 +35,10 @@
 .side-drawer ul a:hover,
 .side-drawer ul a:active{
     color: #fa923f;
+}
+
+@media (min-width: 769px) {
+    .side-drawer,.toggle-button {
+        display: none;
+    }
 }
